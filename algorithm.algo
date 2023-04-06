@@ -1,0 +1,26 @@
+ALGORITHM algorithm-checkpoint
+VAR
+    int sentenceLength = 0; 
+    int wordCount = 0; 
+    int vowelCount = 0; 
+BEGIN
+    { 
+	//Increment sentenceLength variable 
+	sentenceLength++; 
+
+	//Check if the current character is a space 
+	if(sentence.charAt(i) == ' ') 
+	{ 
+		//Increment wordCount variable 
+		wordCount++; 
+	} 
+    if(sentence.charAt(i) == 'a' || sentence.charAt(i) == 'e' || sentence.charAt(i) == 'i' || sentence.charAt(i) == 'o' || sentence.charAt(i) == 'u' ) 
+	{ 
+		//Increment vowelCount variable 
+		vowelCount++; 
+	} 
+} 
+END
+    System.out.println("Sentence length: " + sentenceLength); 
+    System.out.println("Word count: " + (wordCount+1)); 
+    System.out.println("Vowel count: " + vowelCount);
